@@ -27,7 +27,7 @@ export default function Home() {
             transition={{ delay: 1 }}
             className="text-xs lg:text-lg "
           >
-            Impulsa tu negocio de manera facil y rapida.
+            Impulsá tu negocio de manera fácil y rápida.
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
@@ -35,11 +35,11 @@ export default function Home() {
             transition={{ delay: 1.5 }}
             className="text-xs lg:text-lg "
           >
-            Mas tiempo para vos = Mas ganancia para tu negocio.
+            Más tiempo para vos = Más ganancia para tu negocio.
           </motion.h2>
         </div>
         <div className=" w-24 h-24 flex flex-col justify-center items-center">
-          <h1>Ver mas</h1>
+          <h1>Ver más</h1>
           <motion.div
             transition={{ ease: "linear", duration: 1, repeat: Infinity }}
             animate={{ y: 10 }}
@@ -156,7 +156,7 @@ export default function Home() {
                 viewport={{once:true}}
                 className="text-lg "
               >
-                ○ No requiere gran tecnologia.
+                ○ No requiere gran tecnología.
               </motion.h2>
               <motion.h2
                 initial={{ opacity: 0 }}
@@ -174,7 +174,7 @@ export default function Home() {
                 viewport={{once:true}}
                 className="text-lg "
               >
-                ○ Facil de actualizar y escalar.
+                ○ Fácil de actualizar y escalar.
               </motion.h2>
               <motion.h2
                 initial={{ opacity: 0 }}
