@@ -1,0 +1,75 @@
+G-Stock
+Impulsa tu negocio de manera facil y rapida.
+
+Mas tiempo para vos = Mas ganancia
+
+Planes
+
+plan local: pago unico de $100.000
+
+pros:
+.Un solo pago
+ Obtene todos los benefinicios pagando una sola vez
+.Gran velocidad
+ Realiza operaciones a gran velocidad
+.Operaciones ilimitadas
+ Sin limites para la creacion de tus productos y ventas
+.Interfaz intuitiva
+ Facil de usar 
+.Sin uso de internet
+ No hace falta conectarse a internet
+
+contras:
+. Un solo dispositivo
+ solo se puede usar en una computadora
+.Computadora que cumpla requisitos
+ windows 8 minimo
+.Dificil actualizacion
+ Viajar hasta el lugar para actualizar o instalar
+
+plan internet: pago mensual total 80.000/mes. vps 18.000/mes. bdd 30.000/mes (minimo). 30.000/mes actualizaciones y mantenimiento
+
+pros: 
+
+.Muchos dispositivos
+ Usalo en cualquier dispositivo y desde cualquier lugar
+.Gran velocidad 
+ Realiza operaciones a gran velocidad
+.Interfaz intuitiva
+ Facil de usar
+.No requiere gran tecnologia
+ Se puede usar en una computadora o celular viejo
+.Facil de agregar mejoras y actualizaciones
+ Se pueden realizar de forma remota
+
+Contras:
+
+.Pago mensual
+ Pago de una cuota por el hosting y la bdd
+.Operaciones casi ilimitadas
+ Depende el negocio pueden llegar a hacer falta
+.Necesita internet
+ Depende de una conexion a internet
+
+Muestras
+
+
+Imagen de Lista de productos
+
+Ordena tus productos por grupo y buscalos de una forma rapida y sencilla
+
+
+Imagen Del aumento de productos
+
+Aplica aumentos o descuentos a tus productos con un simple click.
+
+Imagen de agregar ventas
+
+Realiza ventas con control de stock facil y rapido
+
+Imagen de los arqueos
+
+Controla tus ingresos diarios con arqueos comodos de actualizar con diferentes formas de pago.
+
+
+Para mas consultas boton
