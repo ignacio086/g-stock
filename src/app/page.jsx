@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Outfit } from "next/font/google";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import {FaBalanceScale, FaCartPlus, FaChevronDown, FaChild, FaHome, FaNetworkWired, FaProductHunt} from 'react-icons/fa'
 const inter = Outfit({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
               animate={{ y: 10 }}
               loo
             >
-              <h1>↓</h1>
+              <FaChevronDown/>
             </motion.div>
           </div>
         </div>
@@ -67,9 +67,9 @@ export default function Home() {
             damping: 12,
           }}
             style={inter.style}
-            className="text-xl lg:text-5xl text-blue-800 text-center mt-8"
+            className="text-xl lg:text-5xl text-blue-800 text-center mt-8 flex"
           >
-            A un CLICK de cambiar tu negocio.
+            A un CLICK de cambiar tu negocio<FaChild/>
           </motion.h1>
         </div>
         <div className="h-screen w-screen p-2   flex flex-col lg:flex-row justify-center items-center gap-32">
@@ -87,7 +87,11 @@ export default function Home() {
           >
             <motion.div className="h-full w-full backdrop-blur bg-slate-100/10 rounded-xl flex flex-col text-center justify-between p-8 gap-8">
               <div>
-                <h1 className="text-4xl text-blue-800">Plan Local</h1>
+                
+                <div className="flex flex-col justify-center items-center">
+                <h1 className="text-4xl text-blue-800 ">Plan Local</h1>
+                <h1 className="text-4xl text-blue-800 "><FaHome/></h1>
+                </div>
                 <p>AR$ 100.000</p>
               </div>
               <div className="text-left gap-2">
@@ -159,7 +163,10 @@ export default function Home() {
           >
             <motion.div className="h-full w-full backdrop-blur bg-slate-100/10 rounded-xl flex flex-col text-center justify-between p-8 gap-8">
               <div>
-                <h1 className="text-4xl text-blue-800">Plan Web</h1>
+                <div className="flex flex-col justify-center items-center">
+                <h1 className="text-4xl text-blue-800 ">Plan Web</h1>
+                <h1 className="text-4xl text-blue-800 "><FaNetworkWired/></h1>
+                </div>
                 <p>AR$ 80.000/mes</p>
               </div>
               <div className="text-left gap-2">
@@ -220,16 +227,16 @@ export default function Home() {
         </div>
         <div></div>
       </div>
-      <div className="w-screen h-32 bg-blue-500"></div>
+      <div className="w-screen h-48 bg-blue-500"></div>
       <div className=" w-screen bg-gradient-to-br from-blue-500 from-50% via-blue-500 from-50% to-slate-100 to-50%  flex flex-col justify-center items-center lg:gap-32">
         <div className="w-full h-96   flex flex-col-reverse  lg:flex-row justify-center items-center lg:gap-8 p-2 lg:p-8">
           <div className="w-full lg:w-1/2 h-full bg-cover bg-no-repeat bg-[url('/productos.png')] border-2 border-gray-700 "></div>
           <div className="w-full lg:w-1/3 h-full flex flex-col text-left">
             <h1
               style={inter.style}
-              className="text-xl lg:text-3xl text-white"
+              className="text-xl lg:text-3xl text-white flex"
             >
-              Listá productos
+              Listá productos. <FaProductHunt/>
             </h1>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
@@ -248,9 +255,9 @@ export default function Home() {
           <div className="w-full lg:w-1/3 h-full flex flex-col text-left">
             <h1
               style={inter.style}
-              className="text-xl lg:text-3xl text-white"
+              className="text-xl lg:text-3xl text-white flex"
             >
-              Agregá ventas
+              Agregá ventas. <FaCartPlus/>
             </h1>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
@@ -270,9 +277,9 @@ export default function Home() {
           <div className="w-full lg:w-1/3 h-full flex flex-col text-left">
             <h1
               style={inter.style}
-              className="text-xl lg:text-3xl text-blue-800"
+              className="text-xl lg:text-3xl text-blue-800 flex"
             >
-              Realizá arqueos
+              Realizá arqueos. <FaBalanceScale/>
             </h1>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
