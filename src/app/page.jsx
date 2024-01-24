@@ -56,8 +56,8 @@ export default function Home() {
       </div>
       <div className="h-screen w-screen p-2  bg-slate-100 flex flex-col lg:flex-row justify-center items-center gap-32">
         <motion.div
-          initial={{ x: -200 }}
-          whileInView={{ x: 0 }}
+          initial={{ y: 200 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
@@ -128,8 +128,8 @@ export default function Home() {
           </motion.div>
         </motion.div>
         <motion.div
-          initial={{ x: 200 }}
-          whileInView={{ x: 0 }}
+          initial={{ y: 200 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
