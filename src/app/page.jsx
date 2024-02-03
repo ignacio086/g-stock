@@ -3,73 +3,87 @@ import Image from "next/image";
 import { Outfit } from "next/font/google";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {FaBalanceScale, FaCartPlus, FaChevronDown, FaChild, FaHome, FaNetworkWired, FaProductHunt} from 'react-icons/fa'
+import {
+  FaBalanceScale,
+  FaCartPlus,
+  FaChevronDown,
+  FaChild,
+  FaHome,
+  FaNetworkWired,
+  FaProductHunt,
+} from "react-icons/fa";
 const inter = Outfit({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <div className="w-screen h-[52rem] lg:h-screen bg-center bg-cover bg-no-repeat lg:bg-[url('/productos.png')] ">
-        <div className="h-full w-full bg-gradient-to-b from-blue-500 to-slate-100/50 lg:bg-gradient-to-b lg:from-blue-900 lg:to-slate-100/50 flex items-center flex-col p-2 justify-center gap-12">
-          <motion.p
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="text-xs lg:text-lg text-black lg:text-white"
-          >
-            Gestor de stock, ventas y arqueos.
-          </motion.p>
-          <div className="flex flex-col text-center p-2 lg:p-20 gap-2 lg:gap-0 backdrop-blur bg-slate-100/30 rounded-xl">
-            <h1
-              style={inter.style}
-              className="text-5xl lg:text-9xl text-blue-800"
-            >
-              G-STOCK
-            </h1>
-            <motion.h2
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1 }}
-              className="text-md lg:text-lg "
-            >
-              Impulsá tu negocio de manera fácil y rápida.
-            </motion.h2>
-            <motion.h2
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.5 }}
-              className="text-md lg:text-lg "
-            >
-              Más tiempo para vos = Más ganancia para tu negocio.
-            </motion.h2>
+      <div className="w-screen h-[52rem] lg:h-screen  ">
+        <div className="h-full w-full bg-gradient-to-b from-blue-500 to-slate-100/50  flex items-center flex-col lg:flex-row lg:justify-end p-2 lg:p-0 justify-center gap-12 lg:gap-0">
+          <div className="w-full h-full  bg-gradient-to-r from-slate-100 via-slate-100 z-10">
+            <div className="w-1/2 h-full flex flex-col items-center justify-between  p-12">
+              <motion.p
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="text-xs lg:text-lg text-black "
+              >
+                Gestor de stock, ventas y arqueos.
+              </motion.p>
+              <div className="flex flex-col   gap-2 lg:gap-0   rounded-xl">
+                <h1
+                  style={inter.style}
+                  className="text-5xl lg:mb-20 lg:text-9xl text-blue-800"
+                >
+                  G-STOCK
+                </h1>
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1 }}
+                  className="text-md lg:text-lg "
+                >
+                  Impulsá tu negocio de manera fácil y rápida.
+                </motion.h2>
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.5 }}
+                  className="text-md lg:text-lg "
+                >
+                  Más tiempo para vos = Más ganancia para tu negocio.
+                </motion.h2>
+              </div>
+              <div className=" w-screen h-24 flex flex-col justify-center items-center">
+                <h1>Ver más</h1>
+                <motion.div
+                  transition={{ ease: "linear", duration: 1, repeat: Infinity }}
+                  animate={{ y: 10 }}
+                  loo
+                >
+                  <FaChevronDown />
+                </motion.div>
+              </div>
+            </div>
           </div>
-          <div className=" w-24 h-24 flex flex-col justify-center items-center">
-            <h1>Ver más</h1>
-            <motion.div
-              transition={{ ease: "linear", duration: 1, repeat: Infinity }}
-              animate={{ y: 10 }}
-              loo
-            >
-              <FaChevronDown/>
-            </motion.div>
-          </div>
+          <div className=" absolute h-full w-1/2  bg-center bg-contain bg-no-repeat lg:bg-[url('/productos.png')] "></div>
         </div>
       </div>
       <div className="h-screen w-screen p-2 bg-gradient-to-tr from-blue-500 from-50% via-blue-500 from-50% to-slate-100 to-50% flex flex-col  justify-center items-center gap-32">
         <div className="w-screen p-2 flex items-center justify-center">
           <motion.h1
-          initial={{ y: 200 }}
-          whileInView={{ y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 250,
-            damping: 12,
-          }}
+            initial={{ y: 200 }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 250,
+              damping: 12,
+            }}
             style={inter.style}
             className="text-xl lg:text-5xl text-blue-800 text-center mt-8 flex"
           >
-            A un CLICK de cambiar tu negocio<FaChild/>
+            A un CLICK de cambiar tu negocio
+            <FaChild />
           </motion.h1>
         </div>
         <div className="h-screen w-screen p-2   flex flex-col lg:flex-row justify-center items-center gap-32">
@@ -87,12 +101,13 @@ export default function Home() {
           >
             <motion.div className="h-full w-full backdrop-blur bg-slate-100/10 rounded-xl flex flex-col text-center justify-between p-8 gap-8">
               <div>
-                
                 <div className="flex flex-col justify-center items-center">
-                <h1 className="text-4xl text-blue-800 ">Plan Local</h1>
-                <h1 className="text-4xl text-blue-800 "><FaHome/></h1>
+                  <h1 className="text-4xl text-blue-800 ">Plan Local</h1>
+                  <h1 className="text-4xl text-blue-800 ">
+                    <FaHome />
+                  </h1>
                 </div>
-                <p>AR$ 100.000</p>
+                <p>AR$ 30.000</p>
               </div>
               <div className="text-left gap-2">
                 <motion.h2
@@ -164,8 +179,10 @@ export default function Home() {
             <motion.div className="h-full w-full backdrop-blur bg-slate-100/10 rounded-xl flex flex-col text-center justify-between p-8 gap-8">
               <div>
                 <div className="flex flex-col justify-center items-center">
-                <h1 className="text-4xl text-blue-800 ">Plan Web</h1>
-                <h1 className="text-4xl text-blue-800 "><FaNetworkWired/></h1>
+                  <h1 className="text-4xl text-blue-800 ">Plan Web</h1>
+                  <h1 className="text-4xl text-blue-800 ">
+                    <FaNetworkWired />
+                  </h1>
                 </div>
                 <p>AR$ 80.000/mes</p>
               </div>
@@ -236,7 +253,7 @@ export default function Home() {
               style={inter.style}
               className="text-xl lg:text-3xl text-white flex"
             >
-              Listá productos. <FaProductHunt/>
+              Listá productos. <FaProductHunt />
             </h1>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
@@ -257,7 +274,7 @@ export default function Home() {
               style={inter.style}
               className="text-xl lg:text-3xl text-white flex"
             >
-              Agregá ventas. <FaCartPlus/>
+              Agregá ventas. <FaCartPlus />
             </h1>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
@@ -279,7 +296,7 @@ export default function Home() {
               style={inter.style}
               className="text-xl lg:text-3xl text-blue-800 flex"
             >
-              Realizá arqueos. <FaBalanceScale/>
+              Realizá arqueos. <FaBalanceScale />
             </h1>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
